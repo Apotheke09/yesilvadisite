@@ -174,3 +174,34 @@ document.getElementById('kaymainImage').addEventListener('click', function () {
 document.getElementById('kaycloseBtn').addEventListener('click', function (e) {
     document.getElementById('kaylightbox').style.display = "none";
 });
+
+
+
+
+let ceyImages = document.querySelectorAll(".ceyimg");
+let ceyModal = document.getElementById("foyymodal");
+let ceyModalImg = document.getElementById("ceymodal-img");
+let ceyCaption = document.getElementById("ceycaption");
+let currentIndex = 0;
+
+ceyImages.forEach((img, index) => {
+  img.addEventListener("click", () => {
+    currentIndex = index;
+    showModal();
+  });
+});
+
+function showModal() {
+  ceyModal.style.display = "block";
+  ceyModalImg.src = ceyImages[currentIndex].src;
+  ceyCaption.innerHTML = ceyImages[currentIndex].alt;
+}
+
+function ceyCloseModal() {
+  ceyModal.style.display = "none";
+}
+
+function ceyChangeSlide(n) {
+  currentIndex = (currentIndex + n + ceyImages.length) % ceyImages.length;
+  showModal();
+}
