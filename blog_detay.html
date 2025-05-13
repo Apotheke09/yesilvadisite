@@ -1,137 +1,181 @@
 <!DOCTYPE html>
 <html lang="tr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Yeşil Vadi Konutları</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-   
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <nav class="navbar">
-        <a href="index.html" class="logo">YeşilVadi<span>Konutları</span></a>
-        
-        <ul class="nav-links">
+      <a href="index.html" class="logo">YeşilVadi<span>Konutları</span></a>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Anasayfa</a></li>
+        <li><a href="#">Hakkımızda</a></li>
+        <li><a href="hizmetler.html">Konutlarımız</a></li>
+        <li><a href="bloglar.html">Bloglar</a></li>
+        <li><a href="iletisim.html">İletişim</a></li>
+      </ul>
+
+      <button class="mobile-menu-btn">
+        <i class="fas fa-bars"></i>
+      </button>
+    </nav>
+    <article>
+      <div class="foyycontainer">
+        <!-- Ana Resim -->
+        <div class="foyyfeatured-image">
+          <img
+            src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+            alt="2023'te En Karlı Emlak Yatırımları"
+          />
+        </div>
+
+        <!-- Blog İçeriği -->
+        <div class="foyyblog-content">
+          <div class="foyyblog-title">2023'te En Karlı Emlak Yatırımları</div>
+
+          <div class="foyyblog-meta">
+            <span><i class="fas fa-user"></i> Ahmet Yılmaz</span>
+            <span><i class="fas fa-calendar-alt"></i> 15 Ekim 2023</span>
+            <span><i class="fas fa-clock"></i> 5 dakika okuma</span>
+            <span><i class="fas fa-eye"></i> 1.245 görüntüleme</span>
+          </div>
+
+          <div class="foyyblog-text">
+            Bu yıl emlak piyasasında hangi bölgeler ve mülk türleri en yüksek
+            getiriyi sağlıyor? Uzmanlarımızın analizlerine göre, pandemi sonrası
+            dönemde emlak yatırımlarında öne çıkan trendler değişti. Özellikle
+            İstanbul'un belirli bölgelerinde ve Anadolu'nun gelişmekte olan
+            şehirlerinde yatırımcılar için önemli fırsatlar bulunuyor.
+          </div>
+
+          <div class="foyyblog-text">
+            İstanbul'da Kadıköy, Beşiktaş ve Şişli gibi merkezi ilçelerdeki
+            rezidans projeleri, yüksek kiralama getirileriyle dikkat çekiyor.
+            Bunun yanında, İstanbul'un batı yakasında yeni gelişen projeler de
+            uzun vadeli yatırımcılar için cazip fırsatlar sunuyor. Uzmanlar,
+            özellikle metro ve Marmaray gibi ulaşım projelerinin yakınındaki
+            konutların değer artış potansiyelinin yüksek olduğunu belirtiyor.
+          </div>
+
+          <div class="foyyblog-text">
+            Anadolu'da ise turizm bölgeleri ve üniversite şehirleri
+            yatırımcıların radarında. Antalya, Muğla gibi turizm merkezlerindeki
+            tatil konutları hem yaz dönemi kiraları hem de uzun vadeli değer
+            artışı sağlıyor. Üniversite şehirlerindeki öğrenciye yönelik
+            konutlar ise yüksek doluluk oranlarıyla dikkat çekiyor.
+          </div>
+        </div>
+
+        <!-- Resim Galerisi -->
+        <div class="foyygallery-section">
+          <div class="foyygallery-title">Proje Görselleri</div>
+
+          <div class="foyygallery-grid">
+            <div class="foyygallery-item" onclick="attOpenFullscreen(this)">
+              <img
+                src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80"
+                alt="Rezidans Dış Görünüm"
+              />
+            </div>
+            <div class="foyygallery-item" onclick="attOpenFullscreen(this)">
+              <img
+                src="https://images.unsplash.com/photo-1600121848594-d8644e57abab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80"
+                alt="Salon Tasarımı"
+              />
+            </div>
+            <div class="foyygallery-item" onclick="attOpenFullscreen(this)">
+              <img
+                src="https://images.unsplash.com/photo-1600210492493-0946911123ea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80"
+                alt="Mutfak Tasarımı"
+              />
+            </div>
+            <div class="foyygallery-item" onclick="attOpenFullscreen(this)">
+              <img
+                src="https://images.unsplash.com/photo-1600121848594-d8644e57abab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80"
+                alt="Yatak Odası"
+              />
+            </div>
+            <div class="foyygallery-item" onclick="attOpenFullscreen(this)">
+              <img
+                src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80"
+                alt="Banyo Tasarımı"
+              />
+            </div>
+            <div class="foyygallery-item" onclick="attOpenFullscreen(this)">
+              <img
+                src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80"
+                alt="Manzara Görünümü"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-section">
+          <h3>Hakkımızda</h3>
+          <p>
+            Emlak şirketi olarak müşteri memnuniyetini ön planda tutarak,
+            güvenilir ve kaliteli hizmet sunmayı hedefliyoruz. Alanında
+            deneyimli ekibimizle, sizlere hayalinizdeki evi ya da yatırımı
+            bulmanızda en iyi şekilde yardımcı olmaya hazırız.
+          </p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h3>Hızlı Linkler</h3>
+          <ul class="footer-links">
             <li><a href="index.html">Anasayfa</a></li>
             <li><a href="#">Hakkımızda</a></li>
             <li><a href="hizmetler.html">Konutlarımız</a></li>
             <li><a href="bloglar.html">Bloglar</a></li>
+
             <li><a href="iletisim.html">İletişim</a></li>
-        </ul>
-        
-        <button class="mobile-menu-btn">
-            <i class="fas fa-bars"></i>
-        </button>
-    </nav>
-    <article>
-        <div class="foyycontainer">
-            <!-- Ana Resim -->
-            <div class="foyyfeatured-image">
-                <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="2023'te En Karlı Emlak Yatırımları">
-            </div>
-            
-            <!-- Blog İçeriği -->
-            <div class="foyyblog-content">
-                <div class="foyyblog-title">2023'te En Karlı Emlak Yatırımları</div>
-                
-                <div class="foyyblog-meta">
-                    <span><i class="fas fa-user"></i> Ahmet Yılmaz</span>
-                    <span><i class="fas fa-calendar-alt"></i> 15 Ekim 2023</span>
-                    <span><i class="fas fa-clock"></i> 5 dakika okuma</span>
-                    <span><i class="fas fa-eye"></i> 1.245 görüntüleme</span>
-                </div>
-                
-                <div class="foyyblog-text">
-                    Bu yıl emlak piyasasında hangi bölgeler ve mülk türleri en yüksek getiriyi sağlıyor? Uzmanlarımızın analizlerine göre, pandemi sonrası dönemde emlak yatırımlarında öne çıkan trendler değişti. Özellikle İstanbul'un belirli bölgelerinde ve Anadolu'nun gelişmekte olan şehirlerinde yatırımcılar için önemli fırsatlar bulunuyor.
-                </div>
-                
-                <div class="foyyblog-text">
-                    İstanbul'da Kadıköy, Beşiktaş ve Şişli gibi merkezi ilçelerdeki rezidans projeleri, yüksek kiralama getirileriyle dikkat çekiyor. Bunun yanında, İstanbul'un batı yakasında yeni gelişen projeler de uzun vadeli yatırımcılar için cazip fırsatlar sunuyor. Uzmanlar, özellikle metro ve Marmaray gibi ulaşım projelerinin yakınındaki konutların değer artış potansiyelinin yüksek olduğunu belirtiyor.
-                </div>
-                
-                <div class="foyyblog-text">
-                    Anadolu'da ise turizm bölgeleri ve üniversite şehirleri yatırımcıların radarında. Antalya, Muğla gibi turizm merkezlerindeki tatil konutları hem yaz dönemi kiraları hem de uzun vadeli değer artışı sağlıyor. Üniversite şehirlerindeki öğrenciye yönelik konutlar ise yüksek doluluk oranlarıyla dikkat çekiyor.
-                </div>
-            </div>
-            
-            <!-- Resim Galerisi -->
-            <div class="foyygallery-section">
-                <div class="foyygallery-title">Proje Görselleri</div>
-                
-                <div class="foyygallery-grid">
-                    <div class="foyygallery-item">
-                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Rezidans Dış Görünüm">
-                    </div>
-                    <div class="foyygallery-item">
-                        <img src="https://images.unsplash.com/photo-1600121848594-d8644e57abab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Salon Tasarımı">
-                    </div>
-                    <div class="foyygallery-item">
-                        <img src="https://images.unsplash.com/photo-1600210492493-0946911123ea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Mutfak Tasarımı">
-                    </div>
-                    <div class="foyygallery-item">
-                        <img src="https://images.unsplash.com/photo-1600121848594-d8644e57abab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Yatak Odası">
-                    </div>
-                    <div class="foyygallery-item">
-                        <img src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Banyo Tasarımı">
-                    </div>
-                    <div class="foyygallery-item">
-                        <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Manzara Görünümü">
-                    </div>
-                </div>
-            </div>
+          </ul>
         </div>
-    </article>
-    <footer>
-        <div class="footer-container">
-            <div class="footer-section">
-                <h3>Hakkımızda</h3>
-                <p>Emlak şirketi olarak müşteri memnuniyetini ön planda tutarak, güvenilir ve kaliteli hizmet sunmayı hedefliyoruz. Alanında deneyimli ekibimizle, sizlere hayalinizdeki evi ya da yatırımı bulmanızda en iyi şekilde yardımcı olmaya hazırız.</p>
-                <div class="social-links">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                </div>
-            </div>
-            
-            <div class="footer-section">
-                <h3>Hızlı Linkler</h3>
-                <ul class="footer-links">
-                    <li><a href="index.html">Anasayfa</a></li>
-                    <li><a href="#">Hakkımızda</a></li>
-                    <li><a href="hizmetler.html">Konutlarımız</a></li>
-<li><a href="bloglar.html">Bloglar</a></li>
-                    
-                    <li><a href="iletisim.html">İletişim</a></li>
-                </ul>
-            </div>
-            
-            <div class="footer-section">
-                <h3>İletişim</h3>
-                <ul class="contact-info">
-                    <li>
-                        
-                        <span><i class="fas fa-map-marker-alt"></i> 1234 Cadde, Manisa/Turgutlu, Türkiye</span>
-                    </li>
-                    <li>
-                        
-                        <span><i class="fas fa-phone"></i> +90 555 123 45 67</span>
-                    </li>
-                    <li>
-                        
-                        <span><i class="fas fa-envelope"></i> info@sirket.com</span>
-                    </li>
-                </ul>
-            </div>
-            
-            
+
+        <div class="footer-section">
+          <h3>İletişim</h3>
+          <ul class="contact-info">
+            <li>
+              <span
+                ><i class="fas fa-map-marker-alt"></i> 1234 Cadde,
+                Manisa/Turgutlu, Türkiye</span
+              >
+            </li>
+            <li>
+              <span><i class="fas fa-phone"></i> +90 555 123 45 67</span>
+            </li>
+            <li>
+              <span><i class="fas fa-envelope"></i> info@sirket.com</span>
+            </li>
+          </ul>
         </div>
-        
-        <div class="footer-bottom">
-            <p>&copy; 2023 Şirket Adı. Tüm hakları saklıdır.</p>
-        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 Yeşil Vadi Konutları. Tüm hakları saklıdır.</p>
+      </div>
     </footer>
+    <div id="attFullscreenModal" class="att-modal">
+      <span class="att-close" onclick="attCloseFullscreen()">&times;</span>
+      <img class="att-modal-content" id="attFullscreenImage" />
+      <div class="att-caption" id="attCaption"></div>
+    </div>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

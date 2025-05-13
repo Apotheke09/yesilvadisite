@@ -752,6 +752,8 @@ footer {
 ;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+
 }
 
 .racontact-info h3 {
@@ -766,7 +768,7 @@ footer {
     align-items: flex-start;
     margin-bottom: 25px;
     position: relative;
-    left: 25%;
+    min-width: 260px;
 }
 
 .rainfo-icon {
@@ -796,7 +798,7 @@ footer {
     gap: 15px;
     margin-top: 30px;
     position: relative;
-    left: 25%;
+    
    
 }
 
@@ -1560,6 +1562,7 @@ footer {
     justify-content: center;
     color: #2a2d34;
     transition: all 0.3s;
+    text-decoration: none;
 }
 
 .caymember-social a:hover {
@@ -2129,5 +2132,71 @@ footer {
         }
     }
 
+
+    .att-modal {
+    display: none;
+    position: fixed;
+    align-content: center;
+    z-index: 1000;
+    padding-top: 50px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.9);
+    overflow: auto;
+}
+
+.att-modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-height: 90%;
+    object-fit: cover;
+    animation: att-zoom 0.3s;
+}
+
+@keyframes att-zoom {
+    from {transform: scale(0.5)}
+    to {transform: scale(1)}
+}
+
+.att-close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.att-close:hover {
+    color: #bbb;
+}
+
+.att-caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 1200px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    font-size: 18px;
+}
+
+@media only screen and (max-width: 768px) {
+    .att-modal-content {
+        width: 95%;
+        max-height: 40%;
+        object-fit: cover;
+    }
+    
+    .att-caption {
+        width: 95%;
+    }
+}
 
     

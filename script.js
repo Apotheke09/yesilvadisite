@@ -205,3 +205,32 @@ function ceyChangeSlide(n) {
   currentIndex = (currentIndex + n + ceyImages.length) % ceyImages.length;
   showModal();
 }
+
+
+function attOpenFullscreen(element) {
+    const modal = document.getElementById("attFullscreenModal");
+    const modalImg = document.getElementById("attFullscreenImage");
+    const captionText = document.getElementById("attCaption");
+    
+    modal.style.display = "block";
+    modalImg.src = element.querySelector('img').src;
+    captionText.innerHTML = element.querySelector('img').alt;
+}
+
+function attCloseFullscreen() {
+    document.getElementById("attFullscreenModal").style.display = "none";
+}
+
+// ESC tuşu ile kapatma
+document.addEventListener('keydown', function(event) {
+    if (event.key === "Escape") {
+        attCloseFullscreen();
+    }
+});
+
+// Modal dışına tıklayarak kapatma
+document.getElementById('attFullscreenModal').addEventListener('click', function(e) {
+    if (e.target === this) {
+        attCloseFullscreen();
+    }
+});
